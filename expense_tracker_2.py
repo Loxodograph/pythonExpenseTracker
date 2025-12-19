@@ -188,3 +188,12 @@ main()
       #Save Expenses
       #Load Expenses
       #Exit
+      
+#Error - String Indices must be integers not 'str'
+  # I was attempting to load a json file from an old save, where the json was not
+  # Converted to dictionaries. This resulted in an error. I fixed it by clearing the
+  # old json file full of strings, and instead loading the new version of the JSON
+  # Files containing dictionary.
+# Int
+  # I was attempting to access the amount property of an expense object. Instead
+  # I needed to create a method to getAmount and return the amount as a float
