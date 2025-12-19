@@ -8,5 +8,10 @@
         "Category": "Internet",
         "Amount": "200",
         "Note": ""
+    },
+    {
+        "Category": "Pizza",
+        "Amount": "15",
+        "Note": ""
     }
 ]

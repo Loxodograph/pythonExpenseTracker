@@ -13,8 +13,8 @@ class Expense:
     
     # This is the reverse of to_dict; converts the dictionary back to an Expense object.
   @classmethod
-  def from_dict(cls, data):
-    return cls(data['Category'], data['Amount'], data['Note'])
+  def from_dict(self, expenseObject):
+    return self(expenseObject['Category'], expenseObject['Amount'], expenseObject['Note'])
     
 
   # Format as human readable string
@@ -61,8 +61,6 @@ class ExpenseTracker:
             print("Expenses Loaded")
     except FileNotFoundError:
         print("No previous data found, starting fresh.")
-    except json.JSONDecodeError:
-        print("Error decoding JSON data. Please check the file format.")
             
   def clear_tracker(self):
     self.list_of_expenses = []
@@ -144,18 +142,49 @@ main()
 
 # Create Expense object which takes a category, a price, and an optional note
   #Methods
-    #To JSON String
     #To Human Readable String
     #Return Price
+    #Convert to dict
+      #Create dictionary object using attributes of expense object
+    #Convert from dict
+    
 
 # Create ExpenseTracker object which has methods:
   # Add Expense
+    # Take expense object as argument
+      #Add expense object to collection
+      #add expense object as dictionary to list
   # Create Expense Object
     # Validate Name Input
     # Validate Number Input
   # Display Expenses
+    #Iterate through expenses
+    #Display expense as string
   # Calculate Total
+    #Iterate through collection of expense objects
+      # Add to total the returned price of the expense object
   # Save to JSON
+    #Open file in write context
+    #Use json dump to write to json dictionaries of expenses
+    #Display Error if not possible
   # Load From JSON
+    #Open file in read context
+    #Load json to variable
+    #Set variable contents to list_of_expenses
+    #Set variable contents to collection as dictionary
+    #display error if not working
   # Clear Tracker
   
+# Main
+  # Create Tracker
+  # Display Greeting
+  # Loop while getting user choices
+    #Display menu
+    #User Choice to Menu
+      #Call functions based on user choice
+      #Add Expense
+      #Display Expense
+      #Clear Expenses
+      #Save Expenses
+      #Load Expenses
+      #Exit
