@@ -1,4 +1,12 @@
 [
-    "{'Category': 'food', 'Amount': '25', 'Note': ''}",
-    "{'Category': 'internet', 'Amount': '175', 'Note': ''}"
+    {
+        "Category": "Food",
+        "Amount": "25",
+        "Note": ""
+    },
+    {
+        "Category": "Internet",
+        "Amount": "200",
+        "Note": ""
+    }
 ]
